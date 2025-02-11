@@ -34,20 +34,21 @@
 			placeholder="Search for help"
 			bind:value={searchTerm}
 		/>
-		<SearchIcon width="16" height="18" class="absolute right-[12px] pointer-events-none" />
+		<SearchIcon width="16" height="18" class="absolute right-[12px] pointer-events-none cursor-pointer" />
 	</div>
 
 	<div class="values overflow-auto h-max-[164px]">
 		{#if searchTerm}
 			{#each values.filter(value => value.toLowerCase().includes(searchTerm.toLowerCase())) as filteredValue}
-				<div class="value-item text-[#F5F5F5] px-3 py-2.5 text-[14px] flex justify-between items-center">
+				<div class="cursor-pointer value-item text-[#F5F5F5] px-3 py-2.5 text-[14px] flex justify-between items-center">
 					<span class="font-normal">{filteredValue}</span>
 					<ArrowRightIcon />
 				</div>
 			{/each}
 		{:else}
 			{#each values as value}
-				<div class="value-item text-[#F5F5F5] px-3 py-2.5 text-[14px] flex justify-between items-center">
+				<div
+					class="cursor-pointer value-item text-[#F5F5F5] px-3 py-2.5 text-[14px] flex justify-between items-center">
 					<span class="font-normal">{value}</span>
 					<ArrowRightIcon />
 				</div>

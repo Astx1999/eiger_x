@@ -2,13 +2,6 @@
 	export let users: string[] = [];
 </script>
 
-<style>
-    .custom-bg {
-        background: linear-gradient(132.15deg, #0B0B0F 0%, rgba(26, 26, 34, 0.9) 95.96%);
-    }
-</style>
-
-<div class="p-4 bg-gradient-custom bg-cover custom-bg z-1 relative">
 	<div class="p-5 pb-[152px] mb-0">
 		<div class="flex justify-between">
 			<img src="/logo.png" alt="Logo" class="w-[110.67px] h-[32px] mt-2" />
@@ -30,9 +23,8 @@
 			<h1 class="text-white text-[32px] font-bold leading-[38px] opacity-70">
 				Hello there
 			</h1>
-			<h1 class="text-white text-[32px] font-bold leading-[38px]">
+			<h1 class="text-white text-[32px] font-bold leading-[38px] whitespace-nowrap">
 				How can we help?
 			</h1>
 		</div>
 	</div>
-</div>

@@ -15,15 +15,22 @@
         background: linear-gradient(132.15deg, #211A1A 0%, #212127 95.96%);
     }
 
+    .custom-bg {
+        background: linear-gradient(132.15deg, #0B0B0F 0%, rgba(26, 26, 34, 0.9) 95.96%);
+    }
+
     .gradient-underlay {
         background: #24FFBC;
     }
 </style>
 
-<div class="relative max-w-[400px] max-h-[704px] mt-3 m-auto rounded-[16px] overflow-hidden root leading-[21px]">
-	<div class="w-full h-[388px] absolute left-0 top-0 z-0 gradient-underlay"></div>
+<div class="relative max-w-[400px] min-h-[704px] m-auto rounded-[16px] overflow-auto root leading-[21px] [@media(max-width:400px)]:rounded-none">
+
+	<div class="p-4 max-h-[388px] gradient-underlay bg-cover z-0 relative">
+		<div class="w-full h-full absolute left-0 top-0 z-[-1] custom-bg"></div>
 	<Header {users} />
-	<div class="px-4 min-h-[315px] mb-0 relative top-[-152px] z-1 relative">
+	</div>
+	<div class="px-4 min-h-[315px] mb-0 relative top-[-120px] z-1 relative">
 		<MessageCard />
 		<SearchBlock {values} {searchTerm} />
 	</div>

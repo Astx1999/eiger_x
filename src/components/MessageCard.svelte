@@ -15,7 +15,8 @@
         background: #1B1E22;
     }
 </style>
-<div class="custom-border custom-bg py-[15px] px-[19px] rounded-[10px] flex justify-between items-center">
+<div
+	class="cursor-pointer custom-border custom-bg py-[15px] px-[19px] rounded-[10px] flex justify-between items-center">
 	<div>
 		<p class="text-white font-semibold text-[14px]">Send us a message</p>
 		<p class="secondary-text font-normal text-[14px]">We typically reply within a day</p>

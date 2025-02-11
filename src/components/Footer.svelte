@@ -10,7 +10,7 @@
     }
 </style>
 
-<div class="footer absolute bottom-0 w-[calc(100%-32px)] left-4 rounded-[8px] bg-[#0B0B0F] py-3.5 my-6">
+<div class="footer absolute bottom-[-2px] w-[calc(100%-32px)] left-4 rounded-[8px] h-[81px] bg-[#0B0B0F] py-3.5 my-6.5">
 	<div class="flex justify-around items-center">
 		<div class="text-center text-white w-[33.3%]">
 			<HomeIcon class="m-auto" width="24px" height="24px" />
