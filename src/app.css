@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/SFPRODISPLAYREGULAR.woff") format("woff");
+}
+
+@font-face {
+    font-family: "SF Pro Display Bold";
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/SFPRODISPLAYBOLD.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/Inter.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter Light";
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/Inter-Light.ttf") format("truetype");
+}
+
+html {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-family: "SF Pro Display Bold", sans-serif;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: none; /* Optional, removes shadow if any */
+}
